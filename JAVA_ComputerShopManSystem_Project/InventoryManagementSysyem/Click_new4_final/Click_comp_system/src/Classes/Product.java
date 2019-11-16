@@ -1,0 +1,79 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Classes;
+
+/**
+ *
+ * @author Ahsan
+ */
+public class Product
+{
+    private String code, Pname, category;
+    private int qty;
+    private double purPrice, sellPrice, profit, TsellPrice;
+    private String date;
+
+    public Product() {
+    }
+       
+    public Product(String date, String code, String Pname, String category, String qty, String purPrice) {
+        this.date = date;
+        this.code = code;
+        this.Pname = Pname;
+        this.category = category;
+        this.qty = Integer.parseInt(qty);
+        this.purPrice = Double.parseDouble(purPrice);
+    }
+
+    public Product(String date, String code, String Pname, String category, String qty, String purPrice, String sellPrice, String profit, String TsellPrice) {
+        this.date = date;
+        this.code = code;
+        this.Pname = Pname;
+        this.category = category;
+        this.qty = Integer.parseInt(qty);
+        this.purPrice = Double.parseDouble(purPrice);
+        this.sellPrice = Double.parseDouble(sellPrice);
+        this.profit = Double.parseDouble(profit);
+        this.TsellPrice = Double.parseDouble(TsellPrice);
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getPname() {
+        return Pname;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public int getQty() {
+        return qty;
+    }
+
+    public double getPurPrice() {
+        return purPrice;
+    }
+
+    public double getSellPrice() {
+        return sellPrice;
+    }
+
+    public double getProfit() {
+        return profit;
+    }
+
+    public double getTsellPrice() {
+        return TsellPrice;
+    }
+
+    public String getDate() {
+        return date;
+    }
+    
+}
